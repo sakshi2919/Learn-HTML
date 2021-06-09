@@ -1,0 +1,104 @@
+<html>
+
+<style>
+
+body{
+    background: linear-gradient(
+        45deg,
+        yellow,
+        red,green,
+        magenta,cyan,pink,black,grey,purple
+    );
+}
+    .ball{
+        border-radius: 50%;
+        
+        position: fixed;
+        height: 50px;
+        width: 50px;
+        margin-top: 50px;
+        animation-name: bounce;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+
+
+    }
+    #b1{
+        left: 5%;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        background:linear-gradient(
+      35deg,
+            red,
+            black
+    );
+    }
+
+    #b2{
+        left: 15%;
+        animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+        background:linear-gradient(
+      35deg,
+        yellow,
+        orange
+    );
+    }
+
+    #b3{
+        left: 25%;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        background:linear-gradient(
+      35deg,
+        green,
+        yellow
+    );
+    }
+
+    #b4{
+        left: 35%;
+        animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+        background:linear-gradient(
+      35deg,
+        blue,
+        green
+        );
+    }
+    #b5{
+        left: 45%;
+        animation-timing-function: cubic-bezier(1, 0, 0, 1);
+        background: linear-gradient(
+      35deg,
+        magenta,
+        cyan
+        );
+    }
+
+    @keyframes bounce {
+    0% {
+      top: 0px;
+      transform: translateX(100px);
+    }
+    100% {
+      top: 249px;
+      transform: translateY(-100px);
+    }
+  }
+</style>
+
+<head> 
+    <title>Bouncing balls</title>
+</head>
+
+<body>
+
+<div id="b1" class="ball"></div>
+
+<div id="b2" class="ball"></div>
+
+<div id="b3" class="ball"></div>
+
+<div id="b4" class="ball"></div>
+
+<div id="b5" class="ball"></div>
+
+</body>
+</html>
